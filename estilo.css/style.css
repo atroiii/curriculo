@@ -15,12 +15,14 @@ ul{
    color: #12577b;
 }
 body {
-    background-image: url('../img/fundo.jpg'); 
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center; 
-    font-family: Arial, sans-serif;
+  background-image: url('sua-imagem.jpg'); /* Caminho da imagem */
+  background-size: cover; /* Faz a imagem cobrir todo o fundo */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  height: 100vh; /* Garante que o fundo cubra toda a altura da página */
+  margin: 0; /* Remove margens para evitar espaços em branco */
 }
+
 
 .imagem {
     float: right; 
