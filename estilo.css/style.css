@@ -1,18 +1,18 @@
-body{
-   
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    background-image: url('../img/fundo.jpg'); /* Caminho da imagem */
-    background-size: cover; /* Faz a imagem cobrir todo o fundo */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita repetição da imagem */
-    height: 100vh; /* Garante que o fundo cubra toda a altura da página */
-    margin: 0; /* Remove margens para evitar espaços em branco */
-    padding: 0; /* Remove preenchimento */ 
-    height: 100%; /* Garante que a altura seja total */ }
-
-   
+body {
+  background-image: url('..img/fundo.jpg'); /* Caminho da imagem */
+  background-size: cover; /* Faz a imagem cobrir o fundo */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição */
+  margin: 0; /* Remove espaços em branco */
+  height: 100vh; /* Altura total da tela */
 }
+
+@media (max-width: 768px) { /* Configurações para dispositivos menores */
+  body {
+    background-size: contain; /* Ajusta a imagem para caber na tela */
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: #032e57;
     font-size: 30px;
