@@ -15,7 +15,7 @@ ul{
    color: #12577b;
 }
 body {
-  background-image: url('sua-imagem.jpg'); /* Caminho da imagem */
+  background-image: url('../img/fundo.jpg'); /* Caminho da imagem */
   background-size: cover; /* Faz a imagem cobrir todo o fundo */
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita repetição da imagem */
