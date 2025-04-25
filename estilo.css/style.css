@@ -3,13 +3,19 @@ body {
   background-size: cover; /* Faz a imagem cobrir o fundo */
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita repetição */
+  min-height: 100vh;
 }
+@media (max-width: 768px) {
   body {
+    background-size: contain; /* Ajusta a imagem para caber dentro da tela */
+  }
+}
+  
+body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-size: contain; /* Ajusta a imagem para caber na tela */
-  }
+{
 
 h1, h2, h3, h4, h5, h6 {
     color: #032e57;
@@ -31,3 +37,4 @@ body {
     width: 550px; 
     height: auto; 
 }
+  
