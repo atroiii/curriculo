@@ -22,12 +22,11 @@ h1 {
 }
 
 .imagem {
-  position: absolute; /* Garante que a imagem fique fixa em relação ao contêiner */
-  top: 70px; /* Ajusta a posição vertical (abaixo do nome) */
-  right: 20px; /* Ajusta a posição horizontal (à direita) */
-  border-radius: 50%; /* Torna a imagem circular */
-  width: 150px; /* Largura da imagem */
-  height: auto; /* Mantém a proporção */
+    float: right; 
+    margin-left: 20px; 
+    border-radius: 50%; 
+    width: 550px; 
+    height: auto; 
 }
 
 
