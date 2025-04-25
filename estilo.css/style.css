@@ -4,9 +4,10 @@ body {
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita repetição */
 }
-
-@media (max-width: 768px) { /* Configurações para dispositivos menores */
   body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     background-size: contain; /* Ajusta a imagem para caber na tela */
   }
 
