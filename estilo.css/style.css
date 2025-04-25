@@ -3,8 +3,6 @@ body {
   background-size: cover; /* Faz a imagem cobrir o fundo */
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita repetição */
-  margin: 0; /* Remove espaços em branco */
-  height: 100vh; /* Altura total da tela */
 }
 
 @media (max-width: 768px) { /* Configurações para dispositivos menores */
