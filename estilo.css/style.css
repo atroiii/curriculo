@@ -68,8 +68,8 @@ ul li {
     margin-left: 20px;
     max-width: 40%;
     height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Mantém a sombra */
     border-radius: 0; /* Remove o arredondamento */
+    box-shadow: none; /* Remove a sombra */
 }
 
 /* Links */
@@ -125,6 +125,11 @@ footer {
 
 footer:hover {
     opacity: 1;
+}
+
+/* Espaçamento entre links e rodapé */
+nav {
+    margin-bottom: 50px; /* Adiciona espaço extra entre os links e o rodapé */
 }
 
 /* Responsividade */
