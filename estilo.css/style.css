@@ -1,43 +1,167 @@
-body {
-  background-image: url(../img/fundo.jpg); /* Caminho da imagem */
-  background-size: cover; /* Faz a imagem cobrir o fundo */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Evita repetição */
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  height: 100%;
+
+body{
+    display: gr;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-align: left;
+    line-height: 1;
+ 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 auto; 
+    padding: 10px; 
+    border-radius: 100px;
+    color: #032e57;
+ }
+
 }
-
-@media (max-width: 768px) {
-  body {
-    background-size: contain; /* Ajusta a imagem para caber dentro da tela */
-  }
-}
-
-h1 {
-  color: #032e57;
-  font-size: 40px;
-  position: relative; /* Posiciona o nome */
-}
-
-.imagem {
-    float: right; 
-    margin-left: 20px; 
-    width: 550px; 
-    height: 400px; 
-}
-
-
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5 {
     color: #032e57;
     font-size: 30px;
 }
-h1 {
-    font-size: 40px;
+#meu{
+    text-indent: 20px;
+    color: #032e57;
+
+}
+
+#pois, #vejo{
+    text-indent: 20px;
+    display: block;
+    
 }
 
 ul{
    color: #12577b;
 }
+body {
+    background-image: url('../img/fundo.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    font-family: Arial, sans-serif;
+}
 
+.imagem {
+    float: right; 
+    margin-left: 20px; 
+    max-width: 40% ; 
+    height: auto; 
+}
+
+/* Estilo geral para todos os links */
+a {
+    color: #12577b; /* Cor azul */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: bold; /* Deixa o texto em negrito */
+    border-bottom: 2px solid transparent; /* Adiciona uma borda inferior invisível */
+    transition: color 0.3s ease, border-bottom-color 0.3s ease, transform 0.3s ease; /* Animação suave */
+    cursor: pointer; /* Mostra o cursor de "mãozinha" */
+}
+
+/* Efeito ao passar o mouse */
+a:hover {
+    color: #ff5733; /* Muda a cor ao passar o mouse */
+    border-bottom-color: #ff5733; /* Mostra a borda inferior ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do link */
+    text-shadow: 0px 0px 5px rgba(255, 87, 51, 0.8); /* Adiciona um brilho */
+}
+
+/* Links visitados */
+a:visited {
+    color: #7a7a7a; /* Cor para links já visitados */
+}
+
+/* Links desativados */
+a:disabled {
+    color: #cccccc; /* Cor cinza para links desativados */
+    pointer-events: none; /* Desativa a interação */
+    text-decoration: none;
+}
+
+/* Links com ícones (opcional) */
+a::before {
+    content: "🔗 "; /* Adiciona um ícone antes do link */
+    font-size: 0.9em;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+a:hover::before {
+    transform: rotate(-20deg); /* Gira o ícone ao passar o mouse */
+}
+
+footer {
+    color: #032e57;
+    text-align: center; 
+    padding: 10px; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.5; /* Meio transparente */
+}
+
+footer:hover {
+    opacity: 1; /* Totalmente opaco ao passar o mouse */
+}
+
+
+
+/* Ajustes para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Reduz o tamanho da fonte */
+        line-height: 1.5; /* Melhora a legibilidade */
+    }
+
+    header {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        padding: 5px; /* Reduz o espaçamento */
+    }
+
+    .imagem {
+        float: none; /* Remove o float */
+        margin: 0 auto; /* Centraliza a imagem */
+        width: 80%; /* Ajusta a largura para 80% da tela */
+        height: auto; /* Mantém a proporção */
+    }
+
+    ul {
+        padding: 0; /* Remove o padding */
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+
+    footer {
+        font-size: 12px; /* Reduz o tamanho do texto no rodapé */
+        padding: 5px; /* Reduz o padding */
+    }
+}
+
+/* Ajustes para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px; /* Reduz o tamanho do título principal */
+    }
+
+    h2, h3, h4, h5 {
+        font-size: 18px; /* Reduz o tamanho dos subtítulos */
+    }
+
+    .imagem {
+        width: 100%; /* Ocupa toda a largura da tela */
+    }
+
+    a {
+        font-size: 14px; /* Ajusta o tamanho dos links */
+    }
+
+    footer {
+        font-size: 10px; /* Reduz ainda mais o tamanho do texto no rodapé */
+    }
+}
