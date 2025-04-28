@@ -1,6 +1,6 @@
 
 body{
-    display: flex;
+    display: gr;
     font-family: Arial, sans-serif;
     font-size: 20px;
     font-variant: small-caps;
@@ -54,6 +54,21 @@ body {
     height: auto; 
 }
 
+footer {
+    color: #032e57;
+    text-align: center; 
+    padding: 10px; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.5; /* Meio transparente */
+}
+
+footer:hover {
+    opacity: 1; /* Totalmente opaco ao passar o mouse */
+}
+
 /* Estilo geral para todos os links */
 a {
     color: #12577b; /* Cor azul */
@@ -95,19 +110,3 @@ a::before {
 a:hover::before {
     transform: rotate(-20deg); /* Gira o ícone ao passar o mouse */
 }
-
-footer {
-    color: #032e57;
-    text-align: center; 
-    padding: 10px; 
-    position: fixed; 
-    bottom: 0; 
-    width: 100%;
-    border-radius: 10px;
-    opacity: 0.5; /* Meio transparente */
-}
-
-footer:hover {
-    opacity: 1; /* Totalmente opaco ao passar o mouse */
-}
-
