@@ -111,8 +111,6 @@ footer:hover {
     opacity: 1; /* Totalmente opaco ao passar o mouse */
 }
 
-
-
 /* Ajustes para telas menores que 768px (tablets e celulares) */
 @media (max-width: 768px) {
     body {
@@ -165,3 +163,4 @@ footer:hover {
         font-size: 10px; /* Reduz ainda mais o tamanho do texto no rodapé */
     }
 }
+
