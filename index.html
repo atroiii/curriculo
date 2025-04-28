@@ -5,37 +5,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Arthur Felipe Dos Santos</title>
         <link rel="stylesheet" href="estilo.css/style.css">
+        <script>
+            function copiarTexto(texto) {
+                // Copia o texto para a área de transferência
+                navigator.clipboard.writeText(texto).then(() => {
+                    // Exibe uma mensagem de confirmação com o texto copiado
+                    alert(`Texto copiado: ${texto}`);
+                }).catch(err => {
+                    console.error("Erro ao copiar texto: ", err);
+                });
+            }
+        </script>
     </head>
     <body>
-        <nav>
+        <header>
             <h1>Arthur Felipe Dos Santos</h1>
+        </header>    
             <hr>
             <img src="img/Perfil.png" alt="Foto de perfil de Arthur Felipe" class="imagem">
-            <br>
             <h2>Informações pessoais:</h2>
             <ul>
                 <li><b>Idade:</b> 23 anos</li>
                 <li><b>Habilidades:</b> CSS, JavaScript, Java, Python</li>
             </ul>
             <h3>Objetivo:</h3>
-            <ul>
-                <li>Meu objetivo é conquistar uma vaga como auxiliar administrativo de PCP, pois acredito que essa área se conecta de maneira significativa com o curso de Ciência da Computação que estou cursando. Vejo isso como uma oportunidade de crescer profissionalmente e alinhar meus conhecimentos teóricos com a prática no dia a dia</li>
-            </ul>
+            
+            <main id="meu">Meu objetivo é conquistar uma vaga como auxiliar administrativo de PCP.<br> 
+                    <span id="pois">Pois acredito que essa área se conecta de maneira significativa com o curso de Ciência da Computação que estou cursando.</span>
+                    <span id="vejo"> Vejo isso como uma oportunidade de crescer profissionalmente e alinhar meus conhecimentos teóricos com a prática no dia a dia.</span>
+            </main>
             <h4>Formação:</h4>
+     <nav>
             <ul>
                 <li><b>Curso profissionalizante:</b> Assistente Administrativo Completo 2.0 (Cebrac)</li>
-                <li><b>Curso Técnico:</b> <a href="https://sistec.mec.gov.br/validadenacional" target="_blank">Técnico em Eletrônica</a> (44670/119272532CM)</li>
+                <li><b>Curso Técnico:</b> 
+                    <a href="https://sistec.mec.gov.br/validadenacional" id="copiar-texto" onclick="copiarTexto('44670/119272532CM')" target="_blank">Técnico em Eletrônica</a> 
+                    (<span id="codigo">44670/119272532CM</span>)
+                </li>
                 <li><b>Graduação:</b> <a href="img/unipac.pdf" target="_blank">Ciência da Computação</a><br>Unipac<br>1° período<br>Previsão de formatura: Janeiro de 2029</li>
             </ul>
+     </nav>
+      <nav>     
             <h5>Informações de Contato:</h5>
             <ul>
                 <li><b>Telefone:</b> <a href="https://wa.me/5532991407648" target="_blank">(32) 99140-7648</a></li>
                 <li><b>E-mail:</b> <a href="mailto:arthurtroiii513@gmail.com">arthurtroiii513@gmail.com</a></li>
             </ul>
-           <ul>
-               <h6>Portifolio:</h6>
-               <li><a href="https://atroiii.github.io/paginas-login/" target="_blank">site de login</li>
-           </ul>
-        </nav>
+     </nav>
+     <br><br>
+     <footer>
+            Desenvolvido por:<br> Arthur Felipe Dos Santos
+        </footer>
     </body>
 </html>
