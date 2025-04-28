@@ -21,10 +21,8 @@ header {
     flex-wrap: wrap;
     text-align: center;
     margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
     color: #032e57;
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo semitransparente */
+   
 }
 
 /* Títulos */
@@ -69,8 +67,6 @@ ul li {
     margin-left: 20px;
     max-width: 40%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Links */
@@ -115,12 +111,9 @@ a:hover::before {
 footer {
     color: #032e57;
     text-align: center;
-    padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
     opacity: 0.5;
     transition: opacity 0.3s ease;
 }
