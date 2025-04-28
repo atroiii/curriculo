@@ -21,8 +21,9 @@ header {
     flex-wrap: wrap;
     text-align: center;
     margin: 0 auto;
-    color: #032e57;
-   
+    padding: 20px;
+    color: #032e57; /* Cor do texto */
+    background-color: transparent; /* Remove o fundo branco */
 }
 
 /* Títulos */
@@ -67,6 +68,8 @@ ul li {
     margin-left: 20px;
     max-width: 40%;
     height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Mantém a sombra */
+    border-radius: 0; /* Remove o arredondamento */
 }
 
 /* Links */
@@ -111,10 +114,12 @@ a:hover::before {
 footer {
     color: #032e57;
     text-align: center;
+    padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
-    opacity: 0.5;
+    background-color: transparent; /* Remove o fundo branco */
+    opacity: 0.5; /* Mantém a opacidade */
     transition: opacity 0.3s ease;
 }
 
