@@ -114,10 +114,10 @@ a:hover::before {
 footer {
     color: #032e57;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 50%;
     background-color: transparent; /* Remove o fundo branco */
     opacity: 0.5; /* Mantém a opacidade */
     transition: opacity 0.3s ease;
